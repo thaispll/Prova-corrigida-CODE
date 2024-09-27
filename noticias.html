@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Títulos de Notícias</title>
+</head>
+<body>
+    <script>
+        // Criar um array para armazenar os títulos das notícias
+        let titulosNoticias = [];
+
+        // Solicitar ao usuário 10 títulos de notícias
+        for (let i = 0; i < 10; i++) {
+            let titulo = prompt(`Digite o título da notícia ${i + 1}:`);
+            titulosNoticias.push(titulo); // Adicionar o título ao array
+        }
+
+        // Exibir os títulos na ordem inversa
+        let titulosInvertidos = "Títulos das notícias (do mais recente para o mais antigo):\n";
+        for (let i = titulosNoticias.length - 1; i >= 0; i--) {
+            titulosInvertidos += `${titulosNoticias[i]}\n`;
+        }
+
+        // Mostrar os títulos invertidos na tela
+        alert(titulosInvertidos);
+    </script>
+</body>
+</html>
